@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101e35">
+  <title>SmartRebook AI · Disruption care demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand" aria-label="SmartRebook AI home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>SmartRebook <strong>AI</strong></span>
+      </div>
+      <div class="topbar-right"><span class="live-dot"></span> OFFLINE DEMO <span class="topbar-divider"></span> <span id="demo-date">14 OCT 2026</span></div>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <div>
+          <p class="eyebrow">PROACTIVE DISRUPTION CARE <span class="eyebrow-line"></span> PRESENTATION PROTOTYPE</p>
+          <h1>Rebooking, before you ask.</h1>
+          <p class="intro-copy">A priority-aware journey from proactive alert to resolution, with a specialist in control when a case gets complex.</p>
+        </div>
+        <div class="intro-badge"><span class="intro-badge-icon">◉</span><span>DEMO SYSTEM STATUS<strong>All services simulated</strong></span></div>
+      </section>
+
+      <nav class="tabs" aria-label="Demo views">
+        <button class="tab active" type="button" data-tab="passenger"><span class="tab-index">01</span> Passenger view</button>
+        <button class="tab" type="button" data-tab="agent"><span class="tab-index">02</span> Human agent <span id="queue-count" class="tab-count">2</span></button>
+        <button class="tab" type="button" data-tab="ops"><span class="tab-index">03</span> AI logic / Ops dashboard</button>
+      </nav>
+
+      <div id="app" aria-live="polite"></div>
+    </main>
+
+    <footer class="footer"><span>SmartRebook AI · Experience simulation</span><span>Academic prototype, not affiliated with Singapore Airlines. All data is fictional.</span></footer>
+  </div>
+</body>
+</html>
